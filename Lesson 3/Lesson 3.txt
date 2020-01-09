@@ -1,0 +1,142 @@
+﻿Topic A
+
+SUbtopic C
+Exercise: Parsing HTML with Python in a Jupyter Notebook
+
+Step 30:
+data = []
+for i, row in enumerate(body_content.find_all('tr')):
+    row_data = row.find_all('td')
+    if len(row_data) != 3:
+        print('Ignoring row {} because len(data) != 3'.format(i))
+        continue
+        
+    d1, d2, d3 = row_data
+    try:
+        d1 = d1.find('a').text
+        d2 = float(d2.text)
+        d3 = d3.find_all('span')[1].text
+    except:
+        print('Ignoring row {} because exception raised'.format(i))
+        continue
+        
+    data.append([d1, d2, d3])
+>> Ignoring row 0 because len(data) != 3
+>> Ignoring row 10 because exception raised
+>> Ignoring row 26 because exception raised
+>> Ignoring row 88 because exception raised
+>> Ignoring row 93 because len(data) != 3
+>> Ignoring row 94 because len(data) != 3
+>> Ignoring row 95 because len(data) != 3
+>> Ignoring row 96 because len(data) != 3
+>> Ignoring row 97 because len(data) != 3
+>> Ignoring row 98 because len(data) != 3
+>> Ignoring row 99 because len(data) != 3
+>> Ignoring row 100 because len(data) != 3
+>> Ignoring row 101 because len(data) != 3
+>> Ignoring row 102 because len(data) != 3
+
+
+**************************************************************************************
+
+Topic B
+
+Subtopic A
+Exercise: Building and merging pandas DataFrames
+
+Step 3:
+
+print(int_rates_col_names)
+int_rates[:5]
+>> ['Country or currency union', 'Central bank interest rate (%)', 'Date of last change']
+>> [['Albania', '1.25', '4 May 2016'],
+    ['Angola', '16.0', '30 June 2016'],
+    ['Argentina', '26.25', '11 April 2017'],
+    ['Armenia', '6.0', '14 February 2017'],
+    ['Australia', '1.5', '2 August 2016']]
+print(populations_col_names)
+populations[:5]
+>> ['Country (or dependency)', 'Population (2017)', 'Yearly Change']
+>> [['China', '1', '409', '517', '397', '0.43 %'],
+    ['India', '1', '339', '180', '127', '1.13 %'],
+    ['U.S.', '324', '459', '463', '0.71 %'],
+    ['Indonesia', '263', '991', '379', '1.10 %'],
+    ['Brazil', '209', '288', '278', '0.79 %']]
+
+
+
+**************************************************************************************
+
+Topic B
+
+
+
+Subtopic B
+
+Exercise: Introduction to interactive visualisations with Bokeh
+
+
+
+Step 7:
+
+
+
+source = ColumnDataSource(data=dict(
+    x=x,
+    y=y,
+    r=size,
+    meta=np.random.choice(list('ABC'), size=len(x)),
+))
+
+hover = HoverTool(tooltips=[
+    ('Label', '@meta'),
+    ('Size', '@r')
+])
+tools = [hover]
+
+p = figure(title='Example plot', tools=tools,
+           x_axis_label='x', y_axis_label='y')
+
+p.circle('x', 'y', radius='r', alpha=0.5, source=source,
+         legend='Random dots')
+show(p)
+
+
+***************************************************************************************
+
+
+Topic B
+
+
+Activity B
+
+
+
+Step 10:
+
+
+
+source = ColumnDataSource(data=dict(
+    x=df['Interest rate'],
+    y=df['Population'],
+    desc=df['Country'],
+    colors=df['Year of last change'].map(year_to_color),
+    label=df['Year of last change']
+))
+
+hover = HoverTool(tooltips=[
+    ('Country', '@desc'),
+    ('Interest Rate (%)', '@x'),
+    ('Population', '@y')
+])
+tools = [hover, PanTool(), BoxZoomTool(), WheelZoomTool(), ResetTool()]
+
+p = figure(tools=tools,
+           x_axis_label='Interest Rate (%)',
+           y_axis_label='Population')
+
+p.circle('x', 'y', size=10, alpha=0.5, source=source,
+         fill_color='colors', line_color='black',
+         legend='label')
+show(p)
+
