@@ -24,5 +24,5 @@ Ran 4 tests in 1.393s
 OK
 ```
 
-![](https://github.com/PacktWorkshops/The-Applied-Data-Science-Workshop/blob/master/src/packt-banner.png)
+![](https://github.com/PacktWorkshops/The-Applied-Data-Science-Workshop/blob/master/assets/packt-banner.png)
 
