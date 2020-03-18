@@ -11,7 +11,7 @@ Introduction to applied Data Science with Python and Jupyter Notebooks.
 
 ### Unit Tests
 
-Unit tests can be executed by navigating to a chapter directory running `unittest`.
+Unit tests can be executed by navigating to a chapter directory and running `unittest`.
 
 For example:
 ```
