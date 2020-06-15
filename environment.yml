@@ -17,5 +17,6 @@ dependencies:
     - scikit_learn==0.22
     - ipython-sql==0.3.9
     - joblib==0.14.1
+    - pdir2
   - python-graphviz
   - pydot
