@@ -20,9 +20,12 @@ From banking and manufacturing through to education and entertainment, using dat
 Taking an interactive approach to learning the fundamentals, The Applied Data Science Workshop is ideal for beginners. You’ll learn all the best practices and techniques for applying data science in the context of real-world scenarios and examples.  
 
 ## What you will learn
-* Gain useful insights into data science and machine learning 
-* Explore the different functionalities and features of a Jupyter Notebook 
-* Discover how Python libraries are used with Jupyter for data analysis 
+* Understand the key opportunities and challenges in data science 
+* Use Jupyter for data science tasks such as data analysis and modeling 
+* Run exploratory data analysis within a Jupyter Notebook  
+* Visualize data with pairwise scatter plots and segmented distribution 
+* Assess model performance with advanced validation techniques 
+* Parse HTML responses and analyze HTTP requests 
 
 ## Related Workshops
 If you've found this repository useful, you might want to check out some of our other workshop titles:
