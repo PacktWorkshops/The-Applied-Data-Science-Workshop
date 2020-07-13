@@ -8,7 +8,7 @@
 This is the repository for The Applied Data Science Workshop, published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the course from start to finish.
 
 ## Requirements and Setup
-<a href=""><img src="https://github.com/PacktWorkshops/Workshop-Covers/blob/master/B15916_The%20Applied%20Data%20Science%20Workshop.png" alt="The Applied Data Science Workshop" height="300px" width="220px" align="right" this.target="_blank"></a>
+<a href=""><img src="https://github.com/PacktWorkshops/Workshop-Covers/blob/master/B15916_The%20Applied%20Data%20Science%20Workshop.png" alt="The Applied Data Science Workshop" height="330px" width="240px" align="right" this.target="_blank"></a>
 
 To get started with the project files, you'll need to:
 1. Install Jupyter on [Windows](https://www.python.org/downloads/windows/), [Mac](https://www.python.org/downloads/mac-osx/), [Linux](https://www.python.org/downloads/source/)
