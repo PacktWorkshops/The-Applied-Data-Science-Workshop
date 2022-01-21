@@ -3,7 +3,7 @@ requests==2.22.0
 pandas==0.25.3
 seaborn==0.9.0
 numpy==1.17.4
-ipython==7.10.1
+ipython==7.16.3
 beautifulsoup4==4.8.1
 graphviz==0.13.2
 mlxtend==0.17.0
