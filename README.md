@@ -1,3 +1,5 @@
+<p align='center'><a href='https://www.eventbrite.com/e/algorithmic-trading-with-python-cohort-2-tickets-1833367644979?aff=oddtdtcreator'><img src='https://static.packt-cdn.com/assets/images/packt+events/Python_for_Algorithmic Trading_v1.png'/></a></p>
+
 # Applied Data Science Workshop
 [![GitHub issues](https://img.shields.io/github/issues/PacktWorkshops/The-Applied-Data-Science-Workshop.svg)](https://github.com/PacktWorkshops/The-Applied-Data-Science-Workshop/issues)
 [![GitHub forks](https://img.shields.io/github/forks/PacktWorkshops/The-Applied-Data-Science-Workshop.svg)](https://github.com/PacktWorkshops/The-Applied-Data-Science-Workshop/network)
